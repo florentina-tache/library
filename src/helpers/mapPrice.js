@@ -15,7 +15,6 @@ export const bookFactory = (book) => {
     const { rentDate, basePrice } = book.rentDetails;
     const penalty = getPenalty(basePrice);
     const returnDate = getReturnDate(rentDate);
-    // console.log("d", book.rentDetails)
     return {
         ...book,
         rentDetails: { ...book.rentDetails, totalPrice: getTotalPrice({ returnDate, basePrice, penalty }) },
