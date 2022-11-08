@@ -1,0 +1,20 @@
+.manageBooksContainer {
+  position: sticky;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  border: none;
+  background-color: #e7e7e7;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}

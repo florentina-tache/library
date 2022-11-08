@@ -7,13 +7,15 @@ import './App.css';
 // import { manageBook } from './helpers/manageRent';
 
 import AppProvider from './context/appProviderContext';
-import BooksList from './components/BooksList';
+import BooksList from './components/BookList/BooksList';
+import ManageBook from './components/ManageBook/ManageBook';
 
 const App = () => {
   return (
     <AppProvider>
-      <div className="App">
+      <div className="appContainer">
         <BooksList />
+        <ManageBook />
       </div>
     </AppProvider>
   );
