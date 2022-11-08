@@ -2,7 +2,6 @@ import * as actionTypes from "./actionTypes";
 
 export const appReducers = (state, action) => {
     const { type, payload } = action;
-    console.log(action, [...state.books, payload])
     switch (type) {
         case actionTypes.GET_BOOKS:
             return { books: payload };
